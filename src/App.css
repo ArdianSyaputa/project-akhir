@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-color: black;
+}
+
+.swal2-actions{
+  gap: 10px;
 }
 
 .App-logo {
