@@ -9,6 +9,7 @@ import Daftar from './pages/DaftarBarang';
 import { BrowserRouter,Switch,Route} from "react-router-dom"
 import Register from './pages/Register';
 import Cart from './pages/Cart';
+import Tampilan from './pages/Tampilan';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
           <Route path="/daftar" component={Daftar} exact/>
           <Route path="/register" component={Register} exact/>
           <Route path="/cart" component={Cart} exact/>
+          <Route path="/tampilan/:id" component={Tampilan} exact/>
         </Switch>
       </main>
       </BrowserRouter>

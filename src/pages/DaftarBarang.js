@@ -31,7 +31,11 @@ export default function Home() {
     },
     buttonsStyling: false,
   });
-
+  const beli = async (barang) => {
+    await axios.post("http://localhost:8000/carts/", barang);
+    console.log(barang);
+  }
+ 
   const deleteUser = async (id) => {
     swalWithBootstrapButtons
       .fire({
@@ -45,7 +49,7 @@ export default function Home() {
       })
       .then((result) => {
         if (result.isConfirmed) {
-          axios.delete(" http://localhost:8000/daftarBarang/" + id);
+          axios.delete(" http://localhost:8000/daftarBarang/" + id); 
           swalWithBootstrapButtons.fire(
             "Deleted!",
             "Your file has been deleted.",
@@ -71,11 +75,6 @@ export default function Home() {
   const loginn = () => {
     history.push("/login")
   } 
-
-  const beli = async (barang) => {
-    await axios.post("http://localhost:8000/cart", barang);
-    console.log(barang);
-  };
 
   return (
     <div className="container my-5" >
@@ -141,9 +140,11 @@ export default function Home() {
                           </>
                         ) : (
                           <>
-                            <button className="block w-full py-3 text-sm font-medium transition bg-yellow-400 rounded hover:scale-105">
+                          <a href={"/tampilan/" + makanan.id}  className="no-underline text-black">
+                            <button  className="block w-full py-3 text-sm font-medium transition bg-yellow-400 rounded hover:scale-105">
                               Add to Cart
                             </button>
+                            </a>
                           </>
                         )}
                       </>

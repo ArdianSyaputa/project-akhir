@@ -56,7 +56,7 @@ export default function Register() {
   return (
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-lg">
-        <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">
+        <h1 class="text-center text-2xl font-bold text-white sm:text-3xl">
           Register
         </h1>
 
@@ -70,11 +70,11 @@ export default function Register() {
           action=""
           class="mt-6 mb-0 space-y-4 rounded-lg p-8 shadow-2xl"
         >
-          <p class="text-lg font-medium">Masuk ke akun anda!</p>
+          <p class="text-lg font-medium text-white">Masuk ke akun anda!</p>
 
           <div>
             <Form.Label>
-              <strong>UserName</strong>
+              <strong className="text-white">UserName</strong>
             </Form.Label>
 
             <div class="relative mt-1">
@@ -109,7 +109,7 @@ export default function Register() {
 
           <div>
             <Form.Label>
-              <strong>Password</strong>
+              <strong className="text-white">Password</strong>
             </Form.Label>
 
             <div class="relative mt-1">
@@ -150,7 +150,7 @@ export default function Register() {
 
           <button
             type="submit"
-            class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"
+            class="block w-full rounded-lg bg-blue-700 px-5 py-3 text-sm font-medium text-white"
           >
             Sign in
           </button>

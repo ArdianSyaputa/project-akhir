@@ -2,9 +2,16 @@ import React from 'react'
 // import {Map, GoogleApiWrapper} from 'google-map-react'
 export default function Footer() {
   return (
-    <div> <footer aria-label="Site Footer" class="bg-dark">
+  <footer aria-label="Site Footer" class="bg-dark">
     <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8">
-     
+      <div class="mx-auto max-w-md">
+      
+  
+        <form class="mt-6">
+          <div class="relative max-w-lg">
+          </div>
+        </form>
+      </div>
   
       <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
         <div class="mx-auto max-w-sm lg:max-w-none">
@@ -14,7 +21,7 @@ export default function Footer() {
   
           <div class="mt-6 flex justify-center gap-4 lg:justify-start">
             <a
-              class="text-blue-800 transition hover:text-gray-700/75"
+              class="text-blue-900 transition hover:text-gray-700/75"
               href=""
               target="_blank"
               rel="noreferrer"
@@ -36,7 +43,7 @@ export default function Footer() {
             </a>
   
             <a
-              class="text-violet-600 transition hover:text-gray-700/75"
+              class="text-violet-900 transition hover:text-gray-700/75"
               href=""
               target="_blank"
               rel="noreferrer"
@@ -76,7 +83,10 @@ export default function Footer() {
                 />
               </svg>
             </a>
-
+  
+          
+  
+          
           </div>
         </div>
   
@@ -84,13 +94,68 @@ export default function Footer() {
           class="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left"
         >
           <div>
+            <strong class="font-medium text-gray-900"> Services </strong>
+  
             <nav
               aria-label="Footer Services Nav"
               class="mt-6 flex flex-col space-y-1"
             >
-           {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.285874464242!2d110.29887327388744!3d-6.975559193025162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e705fdc0235654d%3A0x97b3afe1b2104e70!2sSMK%20Bina%20Nusantara%20Semarang!5e0!3m2!1sid!2sid!4v1670663385482!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Marketing
+              </a>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Graphic Design
+              </a>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                App Development
+              </a>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Web Development
+              </a>
             </nav>
           </div>
+  
+          <div>
+            <strong class="font-medium text-gray-900"> About </strong>
+  
+            <nav
+              aria-label="Footer About Nav"
+              class="mt-6 flex flex-col space-y-1"
+            >
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                About
+              </a>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Careers
+              </a>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                History
+              </a>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Our Team
+              </a>
+            </nav>
+          </div>
+  
+          <div>
+            <strong class="font-medium text-gray-900"> Support </strong>
+  
+            <nav
+              aria-label="Footer Support Nav"
+              class="mt-6 flex flex-col space-y-1"
+            >
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                FAQs
+              </a>
+  
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Contact
+              </a>
+  
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Live Chat
+              </a>
+            </nav>
           </div>
         </div>
       </div>
@@ -103,17 +168,14 @@ export default function Footer() {
   
           Created with
           <a
-            href="/"
+            href=""
             className="no-underline text-white"
-            >Ardian</a>
-          and
-          <a
-            href="/"
-            className="no-underline text-white"
-            >Asisten Ardian</a>.
+            > Ardian Syaputra</a>.
         </p>
       </div>
+    </div>
   </footer>
-  </div>
+  
+ 
   )
 }

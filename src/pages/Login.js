@@ -40,7 +40,7 @@ export default function Login() {
     };
   return (
 <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-  <div class="mx-auto max-w-lg">
+  <div class="mx-auto max-w-lg ">
     <h1 class="text-center text-2xl font-bold text-indigo-100 sm:text-3xl">
       Login
     </h1>
@@ -126,7 +126,7 @@ export default function Login() {
 
       <button
         type="submit"
-        class="block w-full rounded-lg bg-indigo-900 px-5 py-3 text-sm font-medium text-white"
+        class="block w-full rounded-lg bg-blue-700 px-5 py-3 text-sm font-medium text-white"
       >
         Sign in
       </button>

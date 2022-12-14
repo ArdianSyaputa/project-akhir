@@ -119,7 +119,7 @@ export default function NavigationBar() {
             <Form.Group className="mb-3">
               <Form.Label>Harga</Form.Label>
               <Form.Control
-                type="text"
+           
                 placeholder="Input Hrga"
                 value={harga}
                 onChange={(e) => setHarga(e.target.value)}
